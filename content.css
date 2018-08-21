@@ -1,13 +1,5 @@
-#content-body ul.notes > li {
-  padding-left: 0;
-}
-
-#content-body .timeline-entry-inner .author_link {
-  display: none;
-}
-
-#content-body .timeline-entry-inner .timeline-icon {
-  display: none;
+#content-body .mr-state-widget {
+  margin: 0 10px;
 }
 
 #content-body .discussion-form-container {

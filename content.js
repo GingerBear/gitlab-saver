@@ -1,9 +1,13 @@
-main();
+initGitlabSaver();
 
-function main() {
+function initGitlabSaver() {
+  if (!isMergePage()) {
+    return;
+  }
+
   moveBefore(
     '.mr-state-widget',
-    '.discussion-form-container, .disabled-comment'
+    '.notes-form .timeline-entry-inner, .disabled-comment'
   );
   moveBefore('.detail-page-description .description', '.issuable-discussion');
   moveBefore('.detail-page-description .edited-text', '.issuable-discussion');
@@ -17,5 +21,9 @@ function main() {
     if (targetDom && toBeAfterDom) {
       toBeAfterDom.parentNode.insertBefore(targetDom, toBeAfterDom);
     }
+  }
+
+  function isMergePage() {
+    return !!document.querySelector('.merge-request-details');
   }
 }
