@@ -1,0 +1,16 @@
+{
+  "name": "Gitlab Saver",
+  "version": "0.0.1",
+  "author": "Neil Ding",
+  "description": "Make Gitlab usable.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.githost.io/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "manifest_version": 2
+}

@@ -1,0 +1,48 @@
+#content-body ul.notes > li {
+  padding-left: 0;
+}
+
+#content-body .timeline-entry-inner .author_link {
+  display: none;
+}
+
+#content-body .timeline-entry-inner .timeline-icon {
+  display: none;
+}
+
+#content-body .discussion-form-container {
+  padding: 0;
+  margin-top: 20px;
+}
+
+#content-body .detail-page-description {
+  padding-bottom: 0;
+  border: none;
+}
+
+#content-body .detail-page-description .title {
+  margin-bottom: 0;
+}
+
+#content-body .merge-request-tabs-holder {
+  margin-bottom: 15px;
+}
+
+.layout-page .nav-sidebar {
+  transition: none;
+}
+
+.layout-page.right-sidebar-collapsed {
+  transition: none;
+}
+
+#content-body .detail-page-header {
+  border: none;
+}
+#content-body .detail-page-header {
+  border: none;
+}
+
+#content-body .description h1 {
+  font-size: 20px;
+}
