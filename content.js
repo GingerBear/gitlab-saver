@@ -1,7 +1,10 @@
 main();
 
 function main() {
-  moveBefore('.mr-state-widget', '.discussion-form-container');
+  moveBefore(
+    '.mr-state-widget',
+    '.discussion-form-container, .disabled-comment'
+  );
   moveBefore('.detail-page-description .description', '.issuable-discussion');
   moveBefore('.detail-page-description .edited-text', '.issuable-discussion');
   moveBefore('.emoji-list-container', '.issuable-discussion');

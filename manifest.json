@@ -5,7 +5,7 @@
   "description": "Make Gitlab usable.",
   "content_scripts": [
     {
-      "matches": ["https://*.githost.io/*"],
+      "matches": ["https://*.githost.io/*", "https://gitlab.com/*"],
       "js": ["content.js"],
       "css": ["content.css"],
       "run_at": "document_end",
