@@ -1,8 +1,9 @@
+/* moving section around */
 #content-body .mr-state-widget {
   margin: 0 10px;
 }
 
-#content-body .discussion-form-container {
+#content-body .timeline-entry-inner .discussion-form-container {
   padding: 0;
   margin-top: 20px;
 }
@@ -37,4 +38,85 @@
 
 #content-body .description h1 {
   font-size: 20px;
+}
+
+#content-body .content-wrapper {
+  padding-bottom: 500px;
+}
+
+/* file tree */
+.diff-file-tree {
+  margin-left: -10px;
+}
+.diff-file-tree .folder > .folder,
+.folder > .file {
+  padding-left: 8px;
+  margin-left: 5px;
+  border-left: 1px solid #eee;
+}
+.diff-file-tree .change-type-modify {
+  color: #4a8bee;
+}
+.diff-file-tree .change-type-create {
+  color: #168f48;
+}
+.diff-file-tree .change-type-remove {
+  color: #db3b21;
+}
+.diff-file-tree .diff-file-name {
+  cursor: pointer;
+}
+.diff-file-tree .diff-file-name:hover {
+  background: #eee;
+}
+
+/* keep expand */
+body
+  .right-sidebar-collapsed:not(.wiki-sidebar):not(.build-sidebar):not(.issuable-bulk-update-sidebar)
+  .content-wrapper {
+  padding-right: 290px;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed {
+  width: 290px;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .sidebar-collapsed-icon {
+  display: none;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .hide-collapsed {
+  display: block;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .block {
+  padding: 16px 0;
+  border-bottom: 1px solid #e8e8e8;
+  width: 250px;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .block:hover {
+  background: none;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .issuable-sidebar {
+  padding: 0 20px;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .issuable-header-btn {
+  display: block;
+}
+.layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .block.issuable-sidebar-header,
+.layout-page
+  .right-sidebar.right-sidebar-expanded
+  .block.issuable-sidebar-header {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.layout-page .right-sidebar.right-sidebar-collapsed .gutter-toggle {
+  margin-top: 7px;
+  border-left: 1px solid #e8e8e8;
+  text-align: center;
+
+  margin-left: 20px;
+  padding-left: 10px;
+
+  width: auto;
+  height: auto;
+  border-bottom: 1px solid #e3e3e3;
 }
