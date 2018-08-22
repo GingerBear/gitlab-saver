@@ -24,9 +24,12 @@ function initGitlabSaver() {
 
       // attach click event to the tree
       treeDom.addEventListener('click', function(e) {
-        if (!e.target.classList.contains('diff-file-name')) return;
+        const fileEl = e.path.find(
+          t => t.classList && t.classList.contains('file')
+        );
+        if (!fileEl) return;
 
-        const fileName = e.target.dataset['fileName'];
+        const fileName = fileEl.dataset['fileName'];
 
         if (
           !document.querySelector('.diffs-tab').classList.contains('active')
@@ -155,11 +158,14 @@ function initGitlabSaver() {
     return Object.keys(fileTree)
       .map(k => {
         if (fileTree[k].isFile === true) {
-          return `<div class="file">
+          return `<div class="file" data-file-name="${fileTree[k].file}">
             <div 
               class="diff-file-name change-type-${fileTree[k].type}"
-              data-file-name="${fileTree[k].file}"
             >${fileTree[k].shortFileName}</div>
+            <div class="diff-file-line">
+              <span class="diff-file-add">+${fileTree[k].add}</span>
+              <span class="diff-file-remove">-${fileTree[k].remove}</span>
+            </div>
         </div>`;
         } else {
           return `
