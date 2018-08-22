@@ -57,7 +57,9 @@ function initGitlabSaver() {
   }
 
   function jumpToFile(filename) {
-    const targetEl = document.querySelector(`[data-title="${filename}"]`);
+    const targetEl = document.querySelector(
+      `.diffs [data-title="${filename}"]`
+    );
     window.scrollTo(0, targetEl.closest('.file-holder').offsetTop - 140);
   }
 
