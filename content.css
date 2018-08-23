@@ -1,129 +1,152 @@
 /* moving section around */
-#content-body .mr-state-widget {
+.gl-saver-layout #content-body .mr-state-widget {
   margin: 0 10px;
 }
 
-#content-body .timeline-entry-inner .discussion-form-container {
+.gl-saver-layout
+  #content-body
+  .timeline-entry-inner
+  .discussion-form-container {
   padding: 0;
   margin-top: 20px;
 }
 
-#content-body .detail-page-description {
+.gl-saver-layout #content-body .detail-page-description {
   padding-bottom: 0;
   border: none;
 }
 
-#content-body .detail-page-description .title {
+.gl-saver-layout #content-body .detail-page-description .title {
   margin-bottom: 0;
 }
 
-#content-body .merge-request-tabs-holder {
+.gl-saver-layout #content-body .merge-request-tabs-holder {
   margin-bottom: 15px;
 }
 
-.layout-page .nav-sidebar {
+.gl-saver-layout .layout-page .nav-sidebar {
   transition: none;
 }
 
-.layout-page.right-sidebar-collapsed {
+.gl-saver-layout .layout-page.right-sidebar-collapsed {
   transition: none;
 }
 
-#content-body .detail-page-header {
+.gl-saver-layout #content-body .detail-page-header {
   border: none;
 }
-#content-body .detail-page-header {
+.gl-saver-layout #content-body .detail-page-header {
   border: none;
 }
 
-#content-body .description h1 {
+.gl-saver-layout #content-body .description h1 {
   font-size: 20px;
 }
 
-.layout-page .files {
+.gl-saver-layout .layout-page .files {
   margin-bottom: 1000px;
 }
 
 /* file tree */
-.diff-file-tree {
+.gl-saver-tree .diff-file-tree {
   margin-left: -10px;
 }
-.diff-file-tree .folder > .folder,
+.gl-saver-tree .diff-file-tree .folder > .folder,
 .folder > .file {
   padding-left: 8px;
   margin-left: 5px;
   border-left: 1px solid #eee;
 }
-.diff-file-tree .change-type-modify {
+.gl-saver-tree .diff-file-tree .change-type-modify {
   color: #4a8bee;
 }
-.diff-file-tree .change-type-create {
+.gl-saver-tree .diff-file-tree .change-type-create {
   color: #168f48;
 }
-.diff-file-tree .change-type-remove {
+.gl-saver-tree .diff-file-tree .change-type-remove {
   color: #db3b21;
 }
-.diff-file-tree .file {
+.gl-saver-tree .diff-file-tree .file {
   cursor: pointer;
 }
-.diff-file-tree .file:hover {
+.gl-saver-tree .diff-file-tree .file:hover {
   background: #eee;
 }
-.diff-file-tree .diff-file-add {
+.gl-saver-tree .diff-file-tree .diff-file-add {
   font-size: 9px;
   line-height: 8px;
   color: #168f48;
 }
-.diff-file-tree .diff-file-remove {
+.gl-saver-tree .diff-file-tree .diff-file-remove {
   font-size: 9px;
   line-height: 8px;
   color: #db3b21;
 }
-.diff-file-tree .diff-file-line {
+.gl-saver-tree .diff-file-tree .diff-file-line {
   line-height: 0;
   padding-bottom: 2px;
   padding-left: 5px;
 }
 
 /* keep expand */
-body
+.gl-saver-tree
   .right-sidebar-collapsed:not(.wiki-sidebar):not(.build-sidebar):not(.issuable-bulk-update-sidebar)
   .content-wrapper {
   padding-right: 290px;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed {
+.gl-saver-tree .layout-page .right-sidebar.right-sidebar-collapsed {
   width: 290px;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .sidebar-collapsed-icon {
+.gl-saver-tree
+  .layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .sidebar-collapsed-icon {
   display: none;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .hide-collapsed {
+.gl-saver-tree
+  .layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .hide-collapsed {
   display: block;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .block {
+.gl-saver-tree .layout-page .right-sidebar.right-sidebar-collapsed .block {
   padding: 16px 0;
   border-bottom: 1px solid #e8e8e8;
   width: 250px;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .block:hover {
+.gl-saver-tree
+  .layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .block:hover {
   background: none;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .issuable-sidebar {
+.gl-saver-tree
+  .layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .issuable-sidebar {
   padding: 0 20px;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .issuable-header-btn {
+.gl-saver-tree
+  .layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .issuable-header-btn {
   display: block;
 }
-.layout-page
+.gl-saver-tree
+  .layout-page
   .right-sidebar.right-sidebar-collapsed
   .block.issuable-sidebar-header,
-.layout-page
+.gl-saver-tree
+  .layout-page
   .right-sidebar.right-sidebar-expanded
   .block.issuable-sidebar-header {
   padding: 10px 0;
   margin-bottom: 10px;
 }
-.layout-page .right-sidebar.right-sidebar-collapsed .gutter-toggle {
+.gl-saver-tree
+  .layout-page
+  .right-sidebar.right-sidebar-collapsed
+  .gutter-toggle {
   margin-top: 7px;
   border-left: 1px solid #e8e8e8;
   text-align: center;

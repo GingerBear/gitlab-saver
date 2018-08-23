@@ -5,10 +5,17 @@ function initGitlabSaver() {
     return;
   }
 
-  changeLayout();
-  buildFileTree();
+  chrome.storage.sync.get(['changeLayout', 'showFileTree'], function(result) {
+    if (result.changeLayout) {
+      changeLayout();
+    }
+    if (result.showFileTree) {
+      buildFileTree();
+    }
+  });
 
   function buildFileTree() {
+    document.querySelector('html').classList.add('gl-saver-tree');
     getChangeData().then(changes => {
       let delayTimer = null;
       const fileTree = parseTree(changes);
@@ -64,6 +71,7 @@ function initGitlabSaver() {
   }
 
   function changeLayout() {
+    document.querySelector('html').classList.add('gl-saver-layout');
     moveBefore(
       '.mr-state-widget',
       '.notes-form .timeline-entry-inner, .disabled-comment'
